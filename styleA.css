@@ -70,8 +70,8 @@ html, body {
 	margin-right: 1.5rem;
 }
 .about {
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+	margin-top: 8rem;
+	margin-bottom: 8rem;
 }
 .about-desc {
 	padding: 0 20%;
@@ -128,7 +128,6 @@ html, body {
 	margin-bottom: 2rem;
 }
 .contact-us p {
-	padding: 0 20%;
 }
 .form-inline {
 	margin-top: 2rem;
@@ -162,4 +161,65 @@ a.button {
 
 	text-decoration: none;
 	color: initial;
+}
+
+.mobile {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+	display: inline-block;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	border-radius: 10px;
+	padding: 5px;
+	max-width: 250px;
+	height: 180px;
+	vertical-align: middle;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 2px;
+}
+
+.card-links {
+	border: 1px solid #ff8084;
+	border-radius: 3px;
+	background-color: #ff8084;
+	color: white;
+	padding: 1px;
+	font-size: 0.8rem;
+
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+
+	text-decoration: none;
+}
+
+.card-description {
+	font-size: 0.7rem;
+}
+
+.card-description-container {
+	height: 90px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.card-content {
+	height: 100%;
+	display: grid;
 }

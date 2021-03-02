@@ -42,13 +42,10 @@
         <a class="nav-link" href="App-landingpage.html">HOME<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#about">ABOUT</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#download">DOWNLOAD</a>
+        <a class="nav-link" href="#about">ACERCA</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#contactus">CONTACT US</a>
+        <a class="nav-link " href="#details">DETALLES</a>
       </li>
     </ul>
     
@@ -81,7 +78,7 @@
       <div class="container about" id="about">
           <div class="row">
 			<div class="row about-desc text-center justify-content-center  wow fadeIn">
-				<h1>ABOUT</h1>
+				<h1>ACERCA</h1>
 				<p class="lead text-center">Todos los viajes inolvidables empiezan con Bookbnb. Vive aventuras auténticas en sitios remotos o a la vuelta de la esquina.</p>
 			</div>
 		</div>
@@ -97,20 +94,114 @@
           </div>
       </div>
       
-      <!--Contact Us-->
-	<div class="contact-us" id="contactus">
+  <!--Contact Us-->
+	<div class="contact-us" id="details">
 		<div class="container">
-			<div class="row justify-content-center text-center wow fadeInUp">
-				<h1>CONTACT US</h1>
-				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et commodi ipsam nobis perferendis delectus voluptatem ex, laudantium ad quasi cum voluptatum aut, consequuntur distinctio molestias sequi adipisci reprehenderit numquam inventore.</p>
-			</div>
-			<div class="row justify-content-center wow fadeInDown">
-				<form class="form-inline">
-					<label class="sr-only" for="inlineFormInput">Name</label> <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Your First Name" type="text"> <label class="sr-only" for="inlineFormInput">Name</label> <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Your Last Name" type="text">
-				</form>
-			</div>
-			<div class="row justify-content-center wow fadeInDown">
-				<button class="btn contact-us-button btn-light btn-lg" type="button"><i aria-hidden="true" class="fa fa-rocket"></i> &nbsp;Submit </button>
+			<div class="justify-content-center text-center wow fadeInUp">
+				<h1>DETALLES Y ESPECIFICACIONES</h1>
+				<p class="lead">Diagrama de servidores:</p>
+        <img src="images/DiagramaServidores.png" style="margin:1rem">
+        <p class="lead" style="margin-top: 2rem;">Servicios y aplicaciones:</p>
+        <div class="col-md-12 fadeInUp card-container">
+          <div class="card">
+            <div class="container card-content">
+              <h4 class="card-title"><b>Aplicación móvil</b></h4>
+              <div class="card-description-container">
+                <p class="card-description">Aplicación móvil desarrollada en React Native usando Expo y Firebase siguiendo las Material Guidelines de Google</p>
+              </div>
+              <div class="links-container">
+                <a href="https://github.com/bookbnb-G7/bookbnb-appclient" class="card-links btn">Repositorio</a>
+                <a href="bookbnb.apk" class="card-links btn">Guia de usuario</a>
+              </div>
+            </div>
+          </div> 
+
+          <div class="card">
+            <div class="container card-content">
+              <h4 class="card-title"><b>Application Server</b></h4>
+              <div class="card-description-container">
+                <p class="card-description">Servidor que sigue el patron API gateway, funcionando como punto de entrada para la aplicación ademas de tener sus propias funcionalidades</p>
+              </div>
+              <div class="links-container">
+                <a href="https://github.com/bookbnb-G7/bookbnb-appserver" class="card-links btn">Repositorio</a>
+                <a href="" class="card-links btn">Documentación</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="container card-content">
+              <h4 class="card-title"><b>Post Server</b></h4>
+              <div class="card-description-container">
+                <p class="card-description">Servidor desarrollado en Python encargado de el almacenamiento y las funcionalidades relacionadas a los cuartos</p>
+              </div>
+              <div class="links-container">
+                <a href="https://github.com/bookbnb-G7/bookbnb-postserver" class="card-links btn">Repositorio</a>
+                <a href="" class="card-links btn">Documentación</a>
+              </div>
+            </div>
+          </div> 
+          <div class="card">
+            <div class="container card-content">
+              <h4 class="card-title"><b>User Server</b></h4>
+              <div class="card-description-container">
+                <p class="card-description">Servidor desarrollado en Javascript encargado de manejar y almacenar informacion relacionadas a los usuarios</p>
+              </div>
+              <div class="links-container">
+                <a href="https://github.com/bookbnb-G7/bookbnb-userserver" class="card-links btn">Repositorio</a>
+                <a href="" class="card-links btn">Documentación</a>
+              </div>
+            </div>
+          </div> 
+          <div class="card">
+            <div class="container card-content">
+              <h4 class="card-title"><b>Auth Server</b></h4>
+              <div class="card-description-container">
+                <p class="card-description">Servidor desarrollado en Python encargado de la autenticación, valida la identidad de los usuarios haciendo de intermediario con Firebase</p>
+              </div>
+              <div class="links-container">
+                <a href="https://github.com/bookbnb-G7/bookbnb-authserver" class="card-links btn">Repositorio</a>
+                <a href="" class="card-links btn">Documentación</a>
+              </div>
+            </div>
+          </div> 
+          <div class="card">
+            <div class="container card-content">
+              <h4 class="card-title"><b>Payment Server</b></h4>
+              <div class="card-description-container">
+                <p class="card-description">Servidor encargado de gestionar el Smart Contract y los pagos/cobros relacionados al mismo</p>
+              </div>
+              <div class="links-container">
+                <a href="https://github.com/bookbnb-G7/bookbnb-payment" class="card-links btn">Repositorio</a>
+                <a href="" class="card-links btn">Documentación</a>
+              </div>
+            </div>
+          </div> 
+          <div class="card">
+            <div class="container card-content">
+              <h4 class="card-title"><b>Backoffice Web</b></h4>
+              <div class="card-description-container">
+                <p class="card-description">Admin Backoffice desarrollado en React, sirve como plataforma para los administradores, permitiendo manejar usuarios/rooms o visualizar metricas</p>
+              </div>
+              <div class="links-container">
+                <a href="https://github.com/bookbnb-G7/bookbnb-backoffice" class="card-links btn">Repositorio</a>
+                <a href="" class="card-links btn">Guia de usuario</a>
+              </div>
+            </div>
+          </div> 
+          <div class="card">
+            <div class="container card-content">
+              <h4 class="card-title"><b>Landing Page</b></h4>
+              <div class="card-description-container">
+                <p class="card-description">Pagina estatica de bienvenida de la aplicación desarrollada con HTML y CSS puro, reune informacion sobre el proyecto</p>
+              </div>
+              <div class="links-container">
+                <a href="https://github.com/bookbnb-G7/bookbnb-landing-page" class="card-links btn">Repositorio</a>
+              </div>
+            </div>
+          </div> 
+        </div>
 			</div>
 		</div>
 	</div>
